@@ -1,0 +1,20 @@
+
+logging:
+  level:
+    cab:
+      config: DEBUG
+    org:
+      springframework: INFO
+
+segovia:
+  url: http://127.0.0.1:7902/pay
+  auth-url: http://127.0.0.1:7902/auth
+  timeout-millis: 10000
+  api-key: 0aVp83wuFp6wjvQ3
+  account: SEGOVIA
+
+executor:
+  core-pool-size: 5
+  max-pool-size: 20
+  max-queue-capacity: 100
+  thread-name-prefix: "SegoviaThread-"
