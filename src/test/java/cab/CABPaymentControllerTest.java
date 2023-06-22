@@ -54,7 +54,7 @@ class CABPaymentControllerTest {
                         .file("file", file.getBytes())
                         .characterEncoding("UTF-8"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Payment file processed successfully. \n" + new ObjectMapper().writeValueAsString(list)));
+                .andExpect(content().string("Payment file processed successfully. \nJob IDs\n" + new ObjectMapper().writeValueAsString(list)));
 
     }
 }
